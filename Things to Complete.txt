@@ -19,4 +19,4 @@ Home
   - Admins can add incidents themselves
     - Automatically add their name and id to both fields in display
 - User View
-  - Users can just view whatever incident that submitted
+  - Users can just view whatever incident that submitted and delete them
