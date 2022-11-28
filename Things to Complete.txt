@@ -1,0 +1,22 @@
+Database Accessing:
+- incident (note)
+  - Change table name from notes to incidents (keeping it note for now on)
+  - Add admin notes ✅
+  - Add status of incidents ✅
+  - 
+- User 
+  - Add Admin Boolean ✅
+
+
+Sign Up
+- toggle for creating an admin account
+
+Home
+- Admin View
+  - Admins can view all incidents reported
+  - Admins can edit status, add comments to incidents
+    - Admin name and ID get added to incident
+  - Admins can add incidents themselves
+    - Automatically add their name and id to both fields in display
+- User View
+  - Users can just view whatever incident that submitted
