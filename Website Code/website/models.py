@@ -9,7 +9,7 @@ class Note(db.Model):
     date = db.Column(db.DateTime(timezone=True), default=func.now()) #Automatically adds the date for us
     user_id = db.Column(db.Integer, db.ForeignKey('user.id')) #Foreign key is the user.id that created the note
     admin_notes = db.Column(db.String(10000)) #Notes from admin handling issue
-    status = db.Column(db.String, default='Closed') #False is open, True is closed
+    status = db.Column(db.String, default='Open') #False is open, True is closed
 
 class User(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True) #ID will be incremented on its own
