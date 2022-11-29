@@ -13,14 +13,17 @@ Sign Up
 - toggle for creating an admin account ✅
 
 Home
-- Admin View
-  - Admins can view all incidents reported
-  - Admins can edit status, add comments to incidents
-    - Admin name and ID get added to incident
-  - Admins can add incidents themselves
-    - Automatically add their name and id to both fields in display
-- User View
-  - Users can just view whatever incident that submitted
+- Need to create an admin and user view
+  - Admin View
+    - Admins can view all incidents reported
+    - Admins can edit status, add comments to incidents
+      - Admin name and ID get added to incident
+    - Admins can add incidents themselves
+      - Automatically add their name and id to both fields in display
+  - User View (Basically exists already)
+    - Users can just view whatever incident that submitted ✅
+- Need to have the incident display more than just comments
+  - Try to make it a table that they can view with Date|ID|Comments|Admin Comments|Status
 
 Current Accounts:
 kurt@gmail.com
