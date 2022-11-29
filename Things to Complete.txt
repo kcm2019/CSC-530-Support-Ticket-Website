@@ -1,4 +1,5 @@
 Database Accessing:
+*Any databse changes, you need to delete the current db file and then re-run main.py*
 - incident (note)
   - Change table name from notes to incidents (keeping it note for now on)
   - Add admin notes ✅
@@ -9,7 +10,7 @@ Database Accessing:
 
 
 Sign Up
-- toggle for creating an admin account
+- toggle for creating an admin account ✅
 
 Home
 - Admin View
@@ -19,4 +20,13 @@ Home
   - Admins can add incidents themselves
     - Automatically add their name and id to both fields in display
 - User View
-  - Users can just view whatever incident that submitted and delete them
+  - Users can just view whatever incident that submitted
+
+Current Accounts:
+kurt@gmail.com
+12345678
+Admin: Yes
+
+karl@gmail.com
+12345678
+Admin: Yes
