@@ -40,10 +40,13 @@ def sign_up():
         firstName = request.form.get('firstName')
         password1 = request.form.get('password1')
         password2 = request.form.get('password2')
+        admin = request.form.get('admin')
 
         user = User.query.filter_by(email=email).first()
         if user:
             flash("Email already exists.", category='error')
+        elif admin != "Yes" and admin != "No":
+            flash("Type \"Yes\" for an Admin account or type \"No\" for a User account.")
         elif len(email) < 4:
             flash('Email must be longer than 4 characters.', category='error')
         elif len(firstName) < 2:
@@ -53,7 +56,11 @@ def sign_up():
         elif len(password1) < 7:
             flash('Password must be at least 7 characters.', category='error')
         else:
-            new_user = User(email=email, first_name=firstName, password=generate_password_hash(password1, method='sha256')) #hashes password so it is not stored in plain text
+            if admin == "Yes":
+                admin = True
+            elif admin == "No":
+                admin = False
+            new_user = User(email=email, first_Name=firstName, password=generate_password_hash(password1, method='sha256'), admin_access = admin) #hashes password so it is not stored in plain text
             db.session.add(new_user)
             db.session.commit()
             flash('Account Created', category='success')
