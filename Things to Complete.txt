@@ -14,6 +14,7 @@ Sign Up
 
 Home
 - Need to create an admin and user view
+  - Add check to select the appropriate user view ✅
   - Admin View
     - Admins can view all incidents reported
     - Admins can edit status, add comments to incidents
@@ -32,4 +33,4 @@ Admin: Yes
 
 karl@gmail.com
 12345678
-Admin: Yes
+Admin: No
