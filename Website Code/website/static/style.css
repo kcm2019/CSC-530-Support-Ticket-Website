@@ -1993,16 +1993,16 @@ pre code {
 .table th {
     padding: .75rem;
     vertical-align: top;
-    border-top: 1px solid #dee2e6
+    border-top: 1px solid #000000
 }
 
 .table thead th {
     vertical-align: bottom;
-    border-bottom: 2px solid #dee2e6
+    border-bottom: 2px solid #000000
 }
 
 .table tbody+tbody {
-    border-top: 2px solid #dee2e6
+    border-top: 2px solid #000000
 }
 
 .table-sm td,
@@ -2011,12 +2011,12 @@ pre code {
 }
 
 .table-bordered {
-    border: 1px solid #dee2e6
+    border: 1px solid #000000
 }
 
 .table-bordered td,
 .table-bordered th {
-    border: 1px solid #dee2e6
+    border: 1px solid #0a0a0b
 }
 
 .table-bordered thead td,
@@ -2905,8 +2905,8 @@ fieldset:disabled a.btn {
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc
+    background-color:#178a83;
+    border-color: #178a83
 }
 
 .btn-primary.focus,
@@ -3520,7 +3520,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-link:hover {
-    color: #0056b3;
+    color: #17a2b8;
     text-decoration: underline
 }
 
@@ -5531,7 +5531,7 @@ input[type=submit].btn-block {
 
 .page-link:hover {
     z-index: 2;
-    color: #0056b3;
+    color: #17a2b8;
     text-decoration: none;
     background-color: #e9ecef;
     border-color: #dee2e6
