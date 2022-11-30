@@ -13,7 +13,7 @@ Sign Up
 - toggle for creating an admin account ✅
 
 Home
-
+- Check for if user is admin or not adn select appropriate view ✅
 - Need to create an admin and user view
   - Admin View
     - Admins can view all incidents reported
@@ -33,4 +33,8 @@ Admin: Yes
 
 karl@gmail.com
 12345678
-Admin: Yes
+Admin: No
+
+sophia@gmail.com 
+12345678
+Admin: No
