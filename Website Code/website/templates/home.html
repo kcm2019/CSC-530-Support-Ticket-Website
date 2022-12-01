@@ -8,14 +8,18 @@
           <tr>
             <th>ID </th>
             <th>Date </th>
-            <th>User Comments </th>
             <th>User ID </th>
+            <th>User Comments </th>
+            <th>Admin Notes</th>
+            <th>Status</th>
           </tr>
           <tr>
             <td>{{ note.id }}</td>
             <td>{{ note.date}}</td>
+            <td>{{ note.user_id }}</td>
             <td>{{ note.data }}</td>
-            <td>{{note.user_id}}</td>
+            <td>{{ note.admin_notes }}</td>
+            <td>{{ note.status }}</td>
           </tr>
         </table>
         <button type="button" class="close" onClick="deleteNote({{ note.id }})">
