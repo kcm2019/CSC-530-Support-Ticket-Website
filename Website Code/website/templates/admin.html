@@ -1,6 +1,7 @@
 {% extends "base.html" %} {% block title %}Admin View{% endblock %} {% block content
     %}
     <h1 align="center">Incidents</h1>
+    <hr>
     <ul class="list-group list-group-flush" id="notes">
       {% for note in notes %} <!-- was Note.query.all() to get all notes but Note table is not accessed where I need it, Have to look for it, currently user.notes allows you to get notes associated with just the current user -->
       <li class="list-group-item">
@@ -36,7 +37,7 @@
         <button id="note-submit" type="submit" class="btn btn-primary">Add Note</button>
       </div>
     </form>-->
-    <h1>Edit Existing Incident</h1>
+    <h3>Edit Existing Incident</h3>
     <form method="POST" name="note-edit">
       <div class="form-group">
         <label for="note_id">Enter Incident ID</label>
