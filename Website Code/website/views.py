@@ -70,7 +70,7 @@ def delete_note():
     note = Note.query.get(noteId)
     #Prevents Users who do not own the note from deleting it
     if note:
-        if note.user_id == current_user.id:
+        if note.user_id == current_user.id or current_user.admin_access == True:
             db.session.delete(note)
             db.session.commit()
 
