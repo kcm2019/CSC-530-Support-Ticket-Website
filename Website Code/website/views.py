@@ -13,6 +13,7 @@ views = Blueprint('views', __name__)
 @views.route('/', methods = ['GET', 'POST'])
 @login_required
 def home():
+    notes = Note.query.all()
     if (current_user.admin_access == True):
         """if request.method == 'POST': # and request.form["note-submit"]
             note = request.form.get('note')
@@ -47,7 +48,7 @@ def home():
                 db.session.add(updated_note)
                 db.session.commit()
                 flash('Incident Edited!', category='success')
-        return render_template("admin.html", user=current_user)
+        return render_template("admin.html", user=current_user, notes=notes)
     else: 
         if request.method == 'POST':
             note = request.form.get('note')
