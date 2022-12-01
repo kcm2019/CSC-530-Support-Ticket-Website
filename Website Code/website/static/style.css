@@ -88,7 +88,7 @@ h3,
 h4,
 h5,
 h6 {
-    margin-top: 0;
+    margin-top: 20px;
     margin-bottom: .5rem
 }
 
@@ -6403,7 +6403,7 @@ a.badge-dark:focus {
 }
 
 .close:hover {
-    color: #000;
+    color: #FF0000;
     text-decoration: none
 }
 
