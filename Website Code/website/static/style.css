@@ -228,7 +228,12 @@ caption {
 }
 
 th {
-    text-align: inherit
+    text-align: inherit;
+    padding-left: 100px;
+}
+
+td{
+    padding-left: 100px;
 }
 
 label {
